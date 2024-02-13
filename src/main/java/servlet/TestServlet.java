@@ -43,9 +43,9 @@ public class TestServlet extends HttpServlet {
             out.println("<title>Servlet TestServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            tsbl.insertuser(4, "neel", "neel@123");
-            tsbl.UPDATEuser(3, "vivek", "vivek@123");
-            tsbl.REMOVEuser(1);
+//            tsbl.insertuser(4, "neel", "neel@123");
+//            tsbl.UPDATEuser(3, "vivek", "vivek@123");
+//            tsbl.REMOVEuser(1);
             Collection<Usertb> users = tsbl.getAll();
             for(Usertb user : users){
                 out.println("<h1>User name : "+ user.getName()+ "</h1>");
